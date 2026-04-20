@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #0f172a;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
       color: #e2e8f0;
     }
 
@@ -16,52 +16,62 @@
     nav {
       display: flex;
       justify-content: space-between;
-      padding: 15px 30px;
-      background: #020617;
+      padding: 20px 40px;
+      backdrop-filter: blur(10px);
+      background: rgba(0,0,0,0.3);
+      position: sticky;
+      top: 0;
     }
 
     nav a {
       color: #38bdf8;
       text-decoration: none;
-      margin-left: 15px;
+      margin-left: 20px;
+      font-weight: bold;
     }
 
     /* HERO */
     .hero {
       text-align: center;
-      padding: 80px 20px;
-      background: linear-gradient(135deg, #3b82f6, #9333ea);
-      color: white;
+      padding: 100px 20px;
     }
 
     .hero h1 {
-      font-size: 48px;
+      font-size: 50px;
       margin-bottom: 10px;
     }
 
     .hero p {
-      opacity: 0.9;
+      opacity: 0.8;
       font-size: 18px;
     }
 
     main {
       max-width: 1000px;
-      margin: 40px auto;
+      margin: auto;
       padding: 20px;
     }
 
     /* CARD */
     .card {
-      background: #1e293b;
+      background: rgba(255,255,255,0.05);
       padding: 20px;
-      border-radius: 16px;
-      margin-bottom: 20px;
+      border-radius: 20px;
+      margin-bottom: 25px;
+      backdrop-filter: blur(10px);
       transition: 0.3s;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.1);
     }
 
     .card:hover {
-      transform: translateY(-6px);
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 10px;
     }
 
     a {
@@ -70,15 +80,8 @@
 
     footer {
       text-align: center;
-      padding: 20px;
-      background: #020617;
-      color: #94a3b8;
-    }
-
-    img {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 10px;
+      padding: 30px;
+      opacity: 0.6;
     }
   </style>
 </head>
@@ -89,12 +92,13 @@
   <div><strong>MyBlog</strong></div>
   <div>
     <a href="/">Home</a>
+    <a href="#">About</a>
   </div>
 </nav>
 
 <div class="hero">
-  <h1>🚀 Welcome to My Blog</h1>
-  <p>Building and learning in public</p>
+  <h1>🚀 Build. Learn. Grow.</h1>
+  <p>Documenting my journey in tech</p>
 </div>
 
 <main>
